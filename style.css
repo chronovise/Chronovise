@@ -28,9 +28,10 @@ body{
   font-weight = bold;
   color: #dba8a7;
   font-size: 25px;
-  padding-left: 10px;
+  padding-left: 0px;
   padding-top: 14px;
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
 
 .forchrome{
@@ -53,8 +54,15 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
 .button {
+    display: block;
     background-color: #dba8a7;
+    min-width: 120px;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -65,9 +73,35 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+    display: flex; // define a flex container
+    flex-direction: column; // arrange items in column
+    justify-content: center; // align vertically center
+    margin-left: 100px;
+    
 }
 
 .button:hover {
     background-color: #D19E9D;
     color: white;
 }
+
+.button1 {
+}
+
+.button2 {
+}
+
+.button3 {
+}
+
+.button4 {
+}
+
+
+
+
+
+
+
+
+
