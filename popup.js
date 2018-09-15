@@ -9,7 +9,16 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('button2').addEventListener('click',loadSchool);
   document.getElementById('button3').addEventListener('click',loadHome);
   document.getElementById('button4').addEventListener('click',loadTravel);
+  document.getElementById('edit1').addEventListener('click',workstatus)
 });
+
+function workstatus(e){
+  var myNode = document.getElementById("content");
+  while(myNode.firstChild){
+    myNode.removeChild(myNode.firstChild);
+  }
+}
+
 
 function loadWork(e){
   for(i = 0;i<work.length;i++){
