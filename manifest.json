@@ -16,11 +16,9 @@
   },
 
   "browser_action": {
-
-  },
-
-  "page_action":{
-
+    "default_title": "",
+    "default_popup": "popup.html",
+    "default_title": "Chronovise"
   }
 
 }
