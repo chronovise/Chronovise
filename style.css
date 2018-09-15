@@ -1,5 +1,6 @@
 body{
-  background-image: linear-gradient(#a8ff78, #78ffd6);
+  /*background-image: linear-gradient(#F0F2F0, #000C40);*/
+  color: #F5F5F5;
 }
 
 #add-button{
@@ -16,15 +17,63 @@ body{
 #top{
   width:300px;
   height:64px;
-  border-bottom-color: black;
+  /*border-bottom-color: black;*/
   border-width: 0px 0px 1px 0px;
   border-style: solid;
   align-self: left;
 }
 
 #title{
-  color: #ff78a7;
-  font-size: 30px;
-  padding-left: 90px;
+  /*color: #ffc9cf;*/
+  font-weight = bold;
+  color: #dba8a7;
+  font-size: 25px;
+  padding-left: 10px;
   padding-top: 14px;
+  font-family: 'Quicksand', sans-serif;
 }
+
+.forchrome{
+  color: #3cba54;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 14px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.regfont{
+  /*color: #ffc9cf;*/
+
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 14px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button {
+    background-color: #dba8a7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button:hover {
+    background-color: #D19E9D;
+    color: white;
+}
+
+
+
+
+
+
