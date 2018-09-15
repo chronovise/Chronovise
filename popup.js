@@ -1,9 +1,15 @@
-work = ["https://www.google.com","https://www.facebook.com"];
-school = ["https://www.youtube.com"];
-home = [];
-travel = [];
+var work = [];
+var school = [];
+var home = [];
+var travel = [];
 
-var saveNodes = []
+var saveNodes = [];
+
+chrome.storage.local.get(['work'], function(result){
+  if(result.definedURL!=undefined){
+    work = result;
+  }
+})
 
 document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('button1').addEventListener('click',loadWork);
@@ -23,14 +29,14 @@ function workstatus(e){
   }
 
   var node = document.createElement("button")
-  node.setAttribute("id", "save");
+  node.setAttribute("id", "saveWork");
   var node1 = document.createTextNode("Save Changes");
   node.appendChild(node1);
   node.style.margin = "0px 0px 0px 0px";
 
   var area = document.createElement("textarea");
-  area.setAttribute("rows","20");
-  area.setAttribute("cols", "35");
+  area.setAttribute("rows","13");
+  area.setAttribute("cols", "29");
   area.style.margin = "0px 0px 20px 0px";
 
   for(i=0;i<work.length;i++){
@@ -39,11 +45,21 @@ function workstatus(e){
   }
   myNode.append(area);
   myNode.append(node);
-  document.getElementById("save").addEventListener('click', revert);
+  document.getElementById("saveWork").addEventListener('click', revertWork);
 }
 
-function revert(e){
-  var myNode = document.getElementById("content");
+function revertWork(e){
+   var myNode = document.getElementById("content");
+
+   area = myNode.firstChild.value.split("\n");
+
+   work = area;
+
+   chrome.storage.local.set({'work':area},function(){
+      console.log('Value is set to'+area);
+   })
+
+
   myNode.removeChild(myNode.firstChild);
   myNode.removeChild(myNode.firstChild);
   for(i = 0;i<saveNodes.length;i++){
