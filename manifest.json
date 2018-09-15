@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+
+  "name": "Chronovise",
+
+  "version": "1.0",
+
+  "description": "Your life in one click",
+
+  "permissions": ["storage"],
+
+  "background":{
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+
+  },
+
+  "page_action":{
+
+  }
+
+}
