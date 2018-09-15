@@ -26,7 +26,7 @@ body{
 #title{
   /*color: #ffc9cf;*/
   font-weight = bold;
-  color: #dba8a7;
+  color: #ffa332;
   font-size: 25px;
   padding-top: 14px;
   font-family: 'Quicksand', sans-serif;
@@ -59,14 +59,15 @@ body{
     width: 50%;
 }
 
-.bothcolumn{
-  margin-left: 16px;
+#content{
+  width: 250;
+  margin: auto;
 }
 
 
 .button {
     display: block;
-    background-color: #dba8a7;
+    background-color: #ffab44;
     min-width: 120px;
     border: none;
     color: white;
@@ -85,7 +86,7 @@ body{
 }
 
 .button:hover {
-    background-color: #D19E9D;
+    background-color: #c98736;
     color: white;
 }
 
