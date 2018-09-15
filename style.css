@@ -11,11 +11,7 @@ body{
 
 #box{
   width:300px;
-<<<<<<< HEAD
-  height:350px;
-=======
   height:400px;
->>>>>>> 888c55bb34a4b20d82cdfa3a7a60fe29c4b469f9
 }
 
 #top{
@@ -128,4 +124,24 @@ body{
 
 .innerspan{
   font-size:25px;
+}
+
+.line{
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid black;
+position: absolute;
+}
+
+.bottomfont{
+  color: #000000;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 14px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a{
+  text-decoration = none;
 }
