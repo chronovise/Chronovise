@@ -5,7 +5,7 @@ var travel = [];
 
 var saveNodes = [];
 
-chrome.storage.local.get(['work'], function(result){
+chrome.storage.sync.get(['work'], function(result){
   if(result.definedURL!=undefined){
     work = result;
   }
@@ -36,7 +36,7 @@ function workstatus(e){
 
   var area = document.createElement("textarea");
   area.setAttribute("rows","13");
-  area.setAttribute("cols", "29");
+  area.setAttribute("cols", "26");
   area.style.margin = "0px 0px 20px 0px";
 
   for(i=0;i<work.length;i++){
@@ -55,8 +55,8 @@ function revertWork(e){
 
    work = area;
 
-   chrome.storage.local.set({'work':area},function(){
-      console.log('Value is set to'+area);
+   chrome.storage.sync.set({'work':work},function(){
+      console.log('Value is set to'+work);
    })
 
 
