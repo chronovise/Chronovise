@@ -53,7 +53,7 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
-.button {
+#button {
     background-color: #dba8a7;
     border: none;
     color: white;
@@ -71,9 +71,3 @@ body{
     background-color: #D19E9D;
     color: white;
 }
-
-
-
-
-
-
