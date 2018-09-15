@@ -53,7 +53,7 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
-#button {
+.button {
     background-color: #dba8a7;
     border: none;
     color: white;
@@ -66,6 +66,11 @@ body{
     cursor: pointer;
     border-radius: 12px;
 }
+
+#button1{}
+#button2{}
+#button3{}
+#button4{}
 
 .button:hover {
     background-color: #D19E9D;
