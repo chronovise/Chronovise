@@ -28,7 +28,6 @@ body{
   font-weight = bold;
   color: #dba8a7;
   font-size: 25px;
-  padding-left: 0px;
   padding-top: 14px;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
@@ -36,8 +35,8 @@ body{
 
 .forchrome{
   color: #3cba54;
-  font-size: 25px;
-  padding-left: 10px;
+  font-size: 20px;
+  padding-left: 0px;
   padding-top: 14px;
   font-family: 'Quicksand', sans-serif;
 
@@ -55,9 +54,15 @@ body{
 }
 
 .column {
+    display:inline-block;
     float: left;
     width: 50%;
 }
+
+.bothcolumn{
+  margin-left: 16px;
+}
+
 
 .button {
     display: block;
@@ -65,19 +70,18 @@ body{
     min-width: 120px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
-    display: flex; // define a flex container
+    display: flex // define a flex container
     flex-direction: column; // arrange items in column
     justify-content: center; // align vertically center
     margin-left: 100px;
-    
+    vertical-align: middle;
 }
 
 .button:hover {
@@ -96,12 +100,3 @@ body{
 
 .button4 {
 }
-
-
-
-
-
-
-
-
-
