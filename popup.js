@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('button3').addEventListener('click',loadHome);
   document.getElementById('button4').addEventListener('click',loadTravel);
   document.getElementById('edit1').addEventListener('click',workstatus);
+  document.getElementById('suggest').addEventListener('click',openWebsite);
 });
+
+function openWebsite(e){
+  chrome.tabs.create({url:"Website/chronoviseHome.html", selected: true});
+}
 
 function workstatus(e){
 
