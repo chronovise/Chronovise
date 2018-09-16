@@ -90,6 +90,31 @@ body{
     color: white;
 }
 
+.buttonedit {
+    display: block;
+    background-color: #ffcd91;
+    min-width: 120px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex // define a flex container
+    flex-direction: column; // arrange items in column
+    justify-content: center; // align vertically center
+    margin-left: 100px;
+    vertical-align: middle;
+}
+
+
+.buttonedit:hover {
+    background-color: #ffc277 ;
+    color: white;
+}
 .button1 {
 }
 
